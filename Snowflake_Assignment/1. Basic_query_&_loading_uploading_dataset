@@ -1,1 +1,103 @@
+create warehouse Assignments;
+use warehouse Assignments;
+use database HOMEWORK;
+use schema public;
 
+-- Question_1 : Load the given dataset into snowflake with a primary key to Order Date column.
+create or replace TABLE PK_SALES_DATASET
+    (order_id varchar(30),
+    order_date varchar(11) primary key,
+    ship_date varchar(11),
+    ship_mode varchar(30),
+    customer_name varchar(30),
+    segment varchar(30),
+    state varchar(50),
+    country varchar(32),
+    market varchar(30),
+    region varchar(30),
+    product_id varchar(30),
+    category varchar(30),
+    sub_category varchar(30),
+    product_name varchar(150),
+    sales number(10,0),
+    quantity number(10,0),
+    discount float,
+    profit number(10,0),
+    shipping_cost number(10,0),
+    order_priority varchar(30),
+    year varchar(5));
+    
+-- to see the structure of the table that we have created
+describe table pk_sales_dataset;
+
+select * from pk_sales_dataset;
+
+
+-- Question_2 : Change the Primary key to Order Id Column.
+
+-- to change the primarykey first we have to drop it from the order date column
+alter table pk_sales_dataset
+drop primary key;
+-- now make the primary key as order id
+alter table pk_sales_dataset
+add primary key (order_id);
+
+-- Question_3 : Check the data type for Order date and Ship date and mention in what data type it should be?
+select to_char(to_date(order_date), 'yyyy-mm-dd') as Date_order_format,
+        to_char(to_date(order_date), 'yyyy-mm-dd') as ship_date_format
+from pk_sales_dataset;
+
+-- Question_4 : Create a new column called order_extract and extract the number after the last ‘–‘from Order ID column.
+alter table pk_sales_dataset
+add column Order_extract varchar(10);
+
+update pk_sales_dataset
+set Order_extract = substr(order_id,9,7) 
+where order_extract is null;
+select order_extract, order_id from pk_sales_dataset;
+
+/*
+-- Question_5 : Create a new column called Discount Flag and categorize it based on discount.
+--Use ‘Yes’ if the discount is greater than zero else ‘No’.
+*/
+alter table pk_sales_dataset
+add column Discount_Flag varchar(5);
+update pk_sales_dataset
+set Discount_Flag = case
+                        when discount > 0 then 'Yes'
+                        else 'No'
+                    end
+where Discount_Flag is null;
+select discount, discount_flag from pk_sales_dataset;
+
+/*
+Question_6 : Create a new column called process days and calculate how many days it takes
+for each order id to process from the order to its shipment.
+*/
+alter table pk_sales_dataset
+add column process_days varchar(10);
+update pk_sales_dataset
+set process_days = datediff('DAYS', ORDER_DATE,SHIP_DATE)
+where process_days is null;
+select order_date, ship_date, process_days from pk_sales_dataset;
+
+/*
+Question_7 : Create a new column called Rating and then based on the Process dates give rating like given below.
+a. If process days less than or equal to 3days then rating should be 5
+b. If process days are greater than 3 and less than or equal to 6 then rating should be 4
+c. If process days are greater than 6 and less than or equal to 10 then rating should be 3
+d. If process days are greater than 10 then the rating should be 2.
+*/
+alter table pk_sales_dataset
+add column Rating varchar(10);
+
+update pk_sales_dataset
+set rating = case
+                when process_days <= 3 then 5
+                when process_days > 3 and process_days <=6 then 4
+                when process_days >6 and process_days <=10 then 3
+                else 2
+             end
+where rating is null;
+
+select process_days, rating from pk_sales_dataset;
