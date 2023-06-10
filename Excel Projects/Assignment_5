@@ -1,0 +1,33 @@
+Advance Excel Assignment 5
+
+1. How many types of conditions are available in conditional formatting on Excel?
+Answer: There Basically five types of conditional formating in excel:
+        1. Highlight Cell Rules
+        2. Top/Bottom Rules
+        3. Data Bars
+        4. Color Scales
+        5. Icon Sets
+
+2. How to insert border in Excel with Format Cells dialog?
+Answer: Select a cell or a range, then click the Home tab, then the Borders button arrow and then click More Borders.
+        The Format Cells dialog box opens, select the Border tab, click on Outline for border, then click OK button.
+        Border will be inserted on a specific cell or a range.
+
+3. How to Format Numbers as Currency in Excel?
+Answer: Select the cells that you want to format, then in the Number group on the Home tab, click the down arrow in the Number Format box.
+        Choose More Number Formats, then dialog box opens, click on Currency and give the desired currency you want to give such as $ or RS.
+
+4. What are the steps to format numbers in Excel with the Percent style?
+Answer: 1. Click the % button in the Number section on the home tab of the ribbon.
+        2. Select "Percentage" from the dropdown on the home tab of the ribbon.
+
+5. What is a shortcut to merge two or more cells in excel?
+Answer: The shortcut key: ALT + H + M + M
+
+6. How do you use text commands in Excel?
+Answer: The Excel TEXT Function is used to convert numbers to text. Essentially, the function will convert a numeric value into a text string.
+        Formula->   =Text(Value, format_text)
+                    Where:
+                    Value is the numerical value that we need to convert to text
+                    Format_text is the format we want to apply
+
