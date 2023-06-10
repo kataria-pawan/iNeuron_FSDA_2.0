@@ -1,0 +1,35 @@
+Excel Assignment - 6
+
+1. What are the various elements of the Excel interface? Describe how they're used.
+Answer: The interface components of Excel includes the Quick Access Toolbar, Ribbon, Name Box, Formula Quick Menu, 
+        Formula Bar, Status Bar, Worksheet View Options, Zoom Slider Control, and the Zoom Percentage Indicator.
+         1. The Quick Access Toolbar is found on the top-left of the Excel window which contains the commonly-used commands in Excel.
+         2. The Ribbon interface contains the commands that are available for use in Excel. 
+            This has multiple tabs including the File, Home, Insert, Page Layout, Formulas, Data, Review, View, Add-ins, and Help tabs.
+         3. The Name Box is an input box which normally displays the name or location of the active cell on the worksheet.
+         4. The Formula Quick Menu beside the Name box is a shortcut when you want to insert a function.
+            If you click the fx option, the Insert Function will pop-up to let you choose which Excel function would you like to use.
+         5. The Formula Bar is found just beside the Formula Quick Menu. 
+            This allows you to enter or edit data, formula or a function that will appear in the selected cell whose name or location appears in the Name Box.
+         6. The Status Bar in the bottom-left corner of the Excel window displays various information about the current mode of the workbook.
+         7. The Worksheet View Options lets you choose which of the 3 worksheet views you want (Normal, Page Layout, or Page Break Preview).
+         8. The Zoom Slider Control helps you zoom in and zoom out the worksheet.
+         9. The Zoom Percentage Indicator displays the zoom percentage just beside the Zoom Slider Control. By default, it is set to 100%.
+         
+2. Write down the various applications of Excel in the industry.
+Answer: The various applications of Excel in the industry are:
+        1. Calculating
+        2. Accounting
+        3. Charting
+        4.Inventory Tracking
+        5. Calender and Schedules
+        6. Seating Charts
+        7. Goal Planning
+
+3. On the ribbon, make a new tab. Add some different groups, insert commands in the groups and name them according to their commands
+    added. Copy and paste the screenshot of the steps you followed.
+Answer: 
+4. Make a list of different shortcut keys that are only connected to
+formatting with their functions.
+5. What distinguishes Excel from other analytical tools?
+6. Create a table and add a custom header and footer to your table.
