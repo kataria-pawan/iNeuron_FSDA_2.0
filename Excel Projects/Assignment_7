@@ -1,0 +1,30 @@
+Excel Assignment - 7
+
+1. Using Insert Function, give examples of any function available in the different dropdowns present in the function library. For example
+    AutoSum, Recently Used, Text, Date & Time, etc.
+    Answer: On the Home ribbon, click on the arrow next to the AutoSum icon and select More Functions:
+            1. AutoSum: To sum a column, select the cell immediately below the last value in the column. A Sum formula appears in the selected cell, and a range of cells you're adding gets highlighted.
+            2. Recently Used: Excel shows the most recently used functions which are used by you.
+            3. Text: The Excel TEXT Function is used to convert numbers to text within a spreadsheet.
+
+2. What are the different ways you can select columns and rows?
+    Answer: 1. Select Rows/Columns: select a cell in Excel by placing the cursor and clicking the mouse, you can also select a row or a column by simply clicking on the row number or column alphabet.
+            2. Select Multiple Non-Adjacent Rows/Columns: To select non-adjacent rows or columns, hold Ctrl and select the row or column numbers.
+
+3. What is AutoFit and why do we use it?
+Answer: AutoFit automatically resizes cells in a worksheet to accommodate different-sized data without having to manually change the column width and row height.
+
+4. How can you insert new rows and columns into the existing table?
+Answer: Insert Rows into the table: Place the cursor in the table where you want to add a row.
+        Right-click on the selected area and the following dialog box will appear on the screen. Click on the drop-down menu associated with the Insert button.
+        Click on the Insert Rows Above option to add a row above the selected row.
+        Click on the Insert Rows Below option to add a row below the selected row.
+        Similarly, we can use these steps for column insertion.
+
+5. How do you hide and unhide columns in Excel?
+Answer: Hide: to hide a row, select a row, right-click, and then click Hide.
+        Unhide: to unhide a row, select the rows on either side of the hidden row, right-click, and then click Unhide.
+
+6. Create an appropriate table within the worksheet and use different functions available in the AutoSum command.
+Answer: You can access the AutoSum button from the Home – Editing group or Formulas – Function Library group.
+        By clicking the little arrow on the right of the AutoSum button, you can access many other types of functions, such as AVERAGE, MAX, MIN, and COUNT.
